@@ -7,28 +7,28 @@ const projects = [
     cat: "E-commerce Platform",
     tag: "Web / Cloud",
     img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=srgb&fm=jpg&w=1200&q=80",
-    color: "from-emerald-500 to-blue-600",
+    color: "from-sky-500 to-blue-600",
   },
   {
     title: "PulseGrid IoT",
     cat: "Smart Home Network",
     tag: "IoT / Embedded",
     img: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?crop=entropy&cs=srgb&fm=jpg&w=1200&q=80",
-    color: "from-emerald-400 to-emerald-500",
+    color: "from-sky-400 to-sky-500",
   },
   {
     title: "Nimbus AI Assistant",
     cat: "Enterprise AI Chatbot",
     tag: "AI / LLM",
     img: "https://images.unsplash.com/photo-1517512006864-7edc3b933137?crop=entropy&cs=srgb&fm=jpg&w=1200&q=80",
-    color: "from-teal-500 to-indigo-600",
+    color: "from-rose-500 to-violet-600",
   },
   {
     title: "MedSync Mobile",
     cat: "Healthcare App",
     tag: "Mobile / Cross-Platform",
     img: "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?crop=entropy&cs=srgb&fm=jpg&w=1200&q=80",
-    color: "from-indigo-500 to-teal-500",
+    color: "from-violet-500 to-rose-500",
   },
   {
     title: "Quantum Dashboard",
@@ -42,7 +42,7 @@ const projects = [
     cat: "EdTech Training Platform",
     tag: "Web / Courses",
     img: "https://images.unsplash.com/photo-1615803697515-3cb782c2a65a?crop=entropy&cs=srgb&fm=jpg&w=1200&q=80",
-    color: "from-indigo-400 to-emerald-500",
+    color: "from-violet-400 to-sky-500",
   },
 ];
 
@@ -58,11 +58,11 @@ export default function Portfolio() {
           className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16"
         >
           <div className="max-w-2xl">
-            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400">
+            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-sky-400">
               / 03 — Selected Work
             </span>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] mt-5">
-              Recent <span className="gradient-text">launches</span>.
+              Featured <span className="gradient-text">projects</span>.
             </h2>
           </div>
           <p className="text-slate-400 max-w-md text-base">
@@ -104,7 +104,7 @@ export default function Portfolio() {
               </div>
 
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400 mb-2">
+                <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-sky-400 mb-2">
                   {p.cat}
                 </div>
                 <h3 className="font-display text-2xl font-semibold text-white tracking-tight">
@@ -113,7 +113,7 @@ export default function Portfolio() {
               </div>
 
               {/* Hover border accent */}
-              <div className="absolute inset-0 rounded-2xl border border-white/10 group-hover:border-emerald-400/50 transition-colors duration-500 pointer-events-none" />
+              <div className="absolute inset-0 rounded-2xl border border-white/10 group-hover:border-sky-400/50 transition-colors duration-500 pointer-events-none" />
             </motion.a>
           ))}
         </div>

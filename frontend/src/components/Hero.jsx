@@ -26,10 +26,10 @@ function useHeroScene(mountRef) {
 
     // Lights
     scene.add(new THREE.AmbientLight(0xffffff, 0.5));
-    const l1 = new THREE.PointLight(0x10e5a0, 2.5, 50);
+    const l1 = new THREE.PointLight(0x0ea5e9, 2.5, 50);
     l1.position.set(10, 10, 10);
     scene.add(l1);
-    const l2 = new THREE.PointLight(0x5e7cff, 2.5, 50);
+    const l2 = new THREE.PointLight(0xa855f7, 2.5, 50);
     l2.position.set(-10, -5, -10);
     scene.add(l2);
     const l3 = new THREE.PointLight(0xffffff, 1.2, 30);
@@ -48,7 +48,7 @@ function useHeroScene(mountRef) {
       color: 0x0a0a18,
       metalness: 1,
       roughness: 0.15,
-      emissive: new THREE.Color(0x10e5a0),
+      emissive: new THREE.Color(0x0ea5e9),
       emissiveIntensity: 0.45,
     });
     const core = new THREE.Mesh(coreGeo, coreMat);
@@ -57,7 +57,7 @@ function useHeroScene(mountRef) {
     // Wireframe outer
     const wireGeo = new THREE.IcosahedronGeometry(1.55, 1);
     const wireMat = new THREE.MeshBasicMaterial({
-      color: 0x14e5e5,
+      color: 0x0ea5e9,
       wireframe: true,
       transparent: true,
       opacity: 0.25,
@@ -68,14 +68,14 @@ function useHeroScene(mountRef) {
     // Orbiting torus rings
     const ring1 = new THREE.Mesh(
       new THREE.TorusGeometry(2.2, 0.015, 16, 100),
-      new THREE.MeshBasicMaterial({ color: 0x10e5a0, transparent: true, opacity: 0.85 })
+      new THREE.MeshBasicMaterial({ color: 0x0ea5e9, transparent: true, opacity: 0.85 })
     );
     ring1.rotation.x = Math.PI / 2;
     group.add(ring1);
 
     const ring2 = new THREE.Mesh(
       new THREE.TorusGeometry(2.5, 0.012, 16, 100),
-      new THREE.MeshBasicMaterial({ color: 0x5e7cff, transparent: true, opacity: 0.75 })
+      new THREE.MeshBasicMaterial({ color: 0xf43f5e, transparent: true, opacity: 0.75 })
     );
     ring2.rotation.x = Math.PI / 3;
     ring2.rotation.y = Math.PI / 6;
@@ -83,7 +83,7 @@ function useHeroScene(mountRef) {
 
     const ring3 = new THREE.Mesh(
       new THREE.TorusGeometry(2.8, 0.01, 16, 100),
-      new THREE.MeshBasicMaterial({ color: 0x14e5e5, transparent: true, opacity: 0.55 })
+      new THREE.MeshBasicMaterial({ color: 0xa855f7, transparent: true, opacity: 0.55 })
     );
     ring3.rotation.z = Math.PI / 3;
     group.add(ring3);
@@ -91,20 +91,20 @@ function useHeroScene(mountRef) {
     // Glow orbs
     const orb1 = new THREE.Mesh(
       new THREE.SphereGeometry(0.4, 32, 32),
-      new THREE.MeshBasicMaterial({ color: 0x10e5a0, transparent: true, opacity: 0.5 })
+      new THREE.MeshBasicMaterial({ color: 0x0ea5e9, transparent: true, opacity: 0.5 })
     );
     orb1.position.set(3, 1.5, -2);
     scene.add(orb1);
 
     const orb2 = new THREE.Mesh(
       new THREE.SphereGeometry(0.32, 32, 32),
-      new THREE.MeshBasicMaterial({ color: 0x5e7cff, transparent: true, opacity: 0.5 })
+      new THREE.MeshBasicMaterial({ color: 0xa855f7, transparent: true, opacity: 0.5 })
     );
     orb2.position.set(-3, -1.5, -2);
     scene.add(orb2);
 
     // Particle field
-    const PARTICLE_COUNT = 1200;
+    const PARTICLE_COUNT = 600;
     const positions = new Float32Array(PARTICLE_COUNT * 3);
     for (let i = 0; i < PARTICLE_COUNT; i++) {
       const r = 4 + Math.random() * 7;
@@ -117,7 +117,7 @@ function useHeroScene(mountRef) {
     const pGeo = new THREE.BufferGeometry();
     pGeo.setAttribute("position", new THREE.BufferAttribute(positions, 3));
     const pMat = new THREE.PointsMaterial({
-      color: 0x10e5a0,
+      color: 0x0ea5e9,
       size: 0.03,
       sizeAttenuation: true,
       transparent: true,
@@ -135,9 +135,19 @@ function useHeroScene(mountRef) {
     };
     window.addEventListener("mousemove", handleMouse);
 
+    // Pause animations when off-screen (perf — fixes scroll lag)
+    let isVisible = true;
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach((e) => (isVisible = e.isIntersecting)),
+      { threshold: 0.01 }
+    );
+    observer.observe(mount);
+
     const clock = new THREE.Clock();
     let rafId = 0;
     const animate = () => {
+      rafId = requestAnimationFrame(animate);
+      if (!isVisible) return;
       const t = clock.getElapsedTime();
       group.rotation.y = Math.sin(t * 0.4) * 0.4 + t * 0.1;
       group.rotation.x = Math.sin(t * 0.3) * 0.12;
@@ -154,7 +164,6 @@ function useHeroScene(mountRef) {
       camera.lookAt(0, 0, 0);
 
       renderer.render(scene, camera);
-      rafId = requestAnimationFrame(animate);
     };
     animate();
 
@@ -168,6 +177,7 @@ function useHeroScene(mountRef) {
 
     return () => {
       cancelAnimationFrame(rafId);
+      observer.disconnect();
       window.removeEventListener("mousemove", handleMouse);
       window.removeEventListener("resize", handleResize);
       if (renderer.domElement.parentNode === mount) {
@@ -193,8 +203,8 @@ export default function Hero() {
       <div ref={mountRef} className="absolute inset-0 z-0" />
 
       <div className="absolute inset-0 grid-bg z-[1] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-emerald-500/10 blur-[120px] z-[1] pointer-events-none" />
-      <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] rounded-full bg-indigo-500/15 blur-[100px] z-[1] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-sky-500/10 blur-[120px] z-[1] pointer-events-none" />
+      <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] rounded-full bg-violet-500/15 blur-[100px] z-[1] pointer-events-none" />
 
       <div className="container-vk relative z-10 pt-24 pb-12">
         <motion.div
@@ -204,9 +214,9 @@ export default function Hero() {
           className="flex items-center gap-2 mb-8"
         >
           <div className="glass inline-flex items-center gap-2 rounded-full px-4 py-2">
-            <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
+            <Sparkles className="w-3.5 h-3.5 text-sky-400" />
             <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-slate-300">
-              Innovating Since 2020
+              Innovating Since 2025
             </span>
           </div>
         </motion.div>
@@ -241,7 +251,7 @@ export default function Hero() {
           <a
             href="#contact"
             data-testid={HERO.ctaStart}
-            className="group relative inline-flex items-center gap-2 rounded-full px-8 py-4 font-semibold text-[#05050A] bg-gradient-to-r from-emerald-300 to-emerald-500 hover:from-emerald-200 hover:to-emerald-400 transition-all duration-300 glow-cyan hover:-translate-y-0.5"
+            className="group relative inline-flex items-center gap-2 rounded-full px-8 py-4 font-semibold text-[#05050A] bg-gradient-to-r from-sky-300 to-sky-500 hover:from-sky-200 hover:to-sky-400 transition-all duration-300 glow-cyan hover:-translate-y-0.5"
           >
             Start Your Project
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -249,7 +259,7 @@ export default function Hero() {
           <a
             href="#services"
             data-testid={HERO.ctaExplore}
-            className="inline-flex items-center gap-2 rounded-full px-8 py-4 font-medium text-white border border-white/15 hover:border-emerald-400/50 hover:bg-white/5 transition-all duration-300 backdrop-blur-md"
+            className="inline-flex items-center gap-2 rounded-full px-8 py-4 font-medium text-white border border-white/15 hover:border-sky-400/50 hover:bg-white/5 transition-all duration-300 backdrop-blur-md"
           >
             Explore Services
           </a>
@@ -283,7 +293,7 @@ export default function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-slate-400"
       >
         <span className="font-mono text-[10px] uppercase tracking-[0.3em]">Scroll</span>
-        <div className="w-px h-10 bg-gradient-to-b from-emerald-400 to-transparent" />
+        <div className="w-px h-10 bg-gradient-to-b from-sky-400 to-transparent" />
       </motion.div>
     </section>
   );

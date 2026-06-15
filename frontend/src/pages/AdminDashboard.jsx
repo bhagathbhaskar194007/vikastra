@@ -20,9 +20,9 @@ import { api } from "../lib/api";
 import { ADMIN } from "../constants/testIds";
 
 const statusStyle = {
-  new: "bg-emerald-400/10 text-emerald-300 border-emerald-400/30",
-  contacted: "bg-indigo-400/10 text-indigo-300 border-indigo-400/30",
-  closed: "bg-emerald-400/10 text-emerald-300 border-emerald-400/30",
+  new: "bg-sky-400/10 text-sky-300 border-sky-400/30",
+  contacted: "bg-violet-400/10 text-violet-300 border-violet-400/30",
+  closed: "bg-sky-400/10 text-sky-300 border-sky-400/30",
 };
 
 export default function AdminDashboard() {
@@ -89,10 +89,10 @@ export default function AdminDashboard() {
   });
 
   const statCards = [
-    { label: "Total Leads", value: stats.total, icon: Inbox, color: "from-emerald-400 to-blue-500" },
-    { label: "New", value: stats.new, icon: Clock, color: "from-indigo-400 to-teal-500" },
+    { label: "Total Leads", value: stats.total, icon: Inbox, color: "from-sky-400 to-blue-500" },
+    { label: "New", value: stats.new, icon: Clock, color: "from-violet-400 to-rose-500" },
     { label: "Contacted", value: stats.contacted, icon: PhoneCall, color: "from-orange-400 to-rose-500" },
-    { label: "Last 7 days", value: stats.recent_7d, icon: CheckCircle2, color: "from-emerald-400 to-emerald-500" },
+    { label: "Last 7 days", value: stats.recent_7d, icon: CheckCircle2, color: "from-sky-400 to-sky-500" },
   ];
 
   return (
@@ -106,7 +106,7 @@ export default function AdminDashboard() {
       <header className="sticky top-0 z-30 bg-[#05050A]/85 backdrop-blur-xl border-b border-white/5">
         <div className="container-vk flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-emerald-400 to-indigo-500 grid place-items-center glow-cyan">
+            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-sky-400 to-violet-500 grid place-items-center glow-cyan">
               <span className="font-display font-black text-[#05050A]">V</span>
             </div>
             <div>
@@ -120,7 +120,7 @@ export default function AdminDashboard() {
             <button
               onClick={refresh}
               disabled={busy}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 hover:border-emerald-400/40 text-sm text-slate-300 hover:text-white transition"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 hover:border-sky-400/40 text-sm text-slate-300 hover:text-white transition"
             >
               <RefreshCw className={`w-3.5 h-3.5 ${busy ? "animate-spin" : ""}`} /> Refresh
             </button>
@@ -141,7 +141,7 @@ export default function AdminDashboard() {
       <main className="container-vk py-10 relative">
         {/* Heading */}
         <div className="mb-10">
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400">
+          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-sky-400">
             / Dashboard
           </span>
           <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight mt-3">
@@ -210,7 +210,7 @@ export default function AdminDashboard() {
                       selected?.id === lead.id ? "bg-white/[0.05]" : ""
                     }`}
                   >
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400/30 to-indigo-500/30 grid place-items-center font-display font-bold text-white shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-sky-400/30 to-violet-500/30 grid place-items-center font-display font-bold text-white shrink-0">
                       {lead.name.charAt(0).toUpperCase()}
                     </div>
                     <div className="flex-1 min-w-0">
@@ -226,7 +226,7 @@ export default function AdminDashboard() {
                       </div>
                       <div className="text-sm text-slate-400 truncate">{lead.email}</div>
                       {lead.service && (
-                        <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400/80 mt-1">
+                        <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-sky-400/80 mt-1">
                           {lead.service}
                         </div>
                       )}
@@ -243,7 +243,7 @@ export default function AdminDashboard() {
             {selected ? (
               <>
                 <div className="flex items-center justify-between mb-5">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-sky-400">
                     Lead Detail
                   </span>
                   <span
@@ -262,17 +262,17 @@ export default function AdminDashboard() {
                 <div className="space-y-3 mb-6">
                   <a
                     href={`mailto:${selected.email}`}
-                    className="flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] border border-white/5 hover:border-emerald-400/40 transition"
+                    className="flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] border border-white/5 hover:border-sky-400/40 transition"
                   >
-                    <Mail className="w-4 h-4 text-emerald-400" />
+                    <Mail className="w-4 h-4 text-sky-400" />
                     <span className="text-sm text-white break-all">{selected.email}</span>
                   </a>
                   {selected.phone && (
                     <a
                       href={`tel:${selected.phone}`}
-                      className="flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] border border-white/5 hover:border-indigo-400/40 transition"
+                      className="flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] border border-white/5 hover:border-violet-400/40 transition"
                     >
-                      <Phone className="w-4 h-4 text-indigo-300" />
+                      <Phone className="w-4 h-4 text-violet-300" />
                       <span className="text-sm text-white">{selected.phone}</span>
                     </a>
                   )}
@@ -303,7 +303,7 @@ export default function AdminDashboard() {
                       disabled={selected.status === s}
                       className={`px-3 py-1.5 rounded-full font-mono text-[10px] uppercase tracking-[0.2em] border transition ${
                         selected.status === s
-                          ? "bg-emerald-400/20 border-emerald-400/50 text-emerald-200"
+                          ? "bg-sky-400/20 border-sky-400/50 text-sky-200"
                           : "border-white/10 text-slate-400 hover:text-white hover:border-white/30"
                       }`}
                     >

@@ -31,12 +31,12 @@ export default function Navbar() {
     >
       <div className="container-vk flex items-center justify-between h-16 md:h-20">
         <a href="#top" data-testid={NAV.logo} className="flex items-center gap-3 group">
-          <div className="relative w-9 h-9 grid place-items-center rounded-lg bg-gradient-to-br from-emerald-400 to-indigo-500 glow-cyan">
+          <div className="relative w-9 h-9 grid place-items-center rounded-lg bg-gradient-to-br from-sky-400 to-violet-500 glow-cyan">
             <span className="font-display text-lg font-black text-[#05050A]">V</span>
-            <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-emerald-400 to-indigo-500 blur-md opacity-50 group-hover:opacity-80 transition" />
+            <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-sky-400 to-violet-500 blur-md opacity-50 group-hover:opacity-80 transition" />
           </div>
           <span className="font-display text-lg font-bold tracking-tight">
-            VIKASTRA<span className="text-emerald-400">.</span>
+            VIKASTRA<span className="text-sky-400">.</span>
           </span>
         </a>
 
@@ -49,7 +49,7 @@ export default function Navbar() {
               className="relative text-sm font-medium text-slate-300 hover:text-white transition-colors group"
             >
               {l.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-px bg-gradient-to-r from-emerald-400 to-indigo-500 group-hover:w-full transition-all duration-300" />
+              <span className="absolute -bottom-1 left-0 w-0 h-px bg-gradient-to-r from-sky-400 to-violet-500 group-hover:w-full transition-all duration-300" />
             </a>
           ))}
         </nav>
@@ -57,7 +57,7 @@ export default function Navbar() {
         <a
           href="#contact"
           data-testid={NAV.cta}
-          className="hidden md:inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-[#05050A] bg-gradient-to-r from-emerald-300 to-emerald-500 hover:shadow-[0_0_20px_rgba(16, 229, 160,0.5)] transition-all"
+          className="hidden md:inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-[#05050A] bg-gradient-to-r from-sky-300 to-sky-500 hover:shadow-[0_0_20px_rgba(16, 229, 160,0.5)] transition-all"
         >
           Get Started
         </a>
@@ -88,7 +88,7 @@ export default function Navbar() {
                   href={l.href}
                   data-testid={`${l.id}-mobile`}
                   onClick={() => setOpen(false)}
-                  className="text-base text-slate-200 hover:text-emerald-400 transition py-2"
+                  className="text-base text-slate-200 hover:text-sky-400 transition py-2"
                 >
                   {l.label}
                 </a>
@@ -96,7 +96,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
-                className="mt-2 inline-flex justify-center items-center rounded-full px-5 py-3 text-sm font-semibold text-[#05050A] bg-gradient-to-r from-emerald-300 to-emerald-500"
+                className="mt-2 inline-flex justify-center items-center rounded-full px-5 py-3 text-sm font-semibold text-[#05050A] bg-gradient-to-r from-sky-300 to-sky-500"
               >
                 Get Started
               </a>

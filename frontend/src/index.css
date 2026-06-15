@@ -10,8 +10,9 @@
   --bg-tertiary: #12121A;
   --text-primary: #F8FAFC;
   --text-secondary: #94A3B8;
-  --brand-cyan: #00E5FF;
-  --brand-purple: #B026FF;
+  --brand-azure: #0EA5E9;
+  --brand-rose: #F43F5E;
+  --brand-violet: #A855F7;
   --brand-silver: #E2E8F0;
 
   /* Shadcn dark mappings */
@@ -21,7 +22,7 @@
   --card-foreground: 210 40% 98%;
   --popover: 240 17% 6%;
   --popover-foreground: 210 40% 98%;
-  --primary: 187 100% 50%;
+  --primary: 199 89% 48%;
   --primary-foreground: 240 14% 3%;
   --secondary: 240 10% 12%;
   --secondary-foreground: 210 40% 98%;
@@ -33,7 +34,7 @@
   --destructive-foreground: 210 40% 98%;
   --border: 240 6% 16%;
   --input: 240 6% 16%;
-  --ring: 187 100% 50%;
+  --ring: 199 89% 48%;
   --radius: 0.75rem;
 }
 
@@ -57,7 +58,7 @@ body {
 }
 
 ::selection {
-  background: rgba(16, 229, 160, 0.3);
+  background: rgba(244, 63, 94, 0.3);
   color: #fff;
 }
 
@@ -65,7 +66,7 @@ body {
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track { background: #05050A; }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #10E5A0 0%, #14E5E5 50%, #5E7CFF 100%);
+  background: linear-gradient(180deg, #0EA5E9 0%, #F43F5E 50%, #A855F7 100%);
   border-radius: 6px;
 }
 
@@ -75,7 +76,7 @@ body {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(90deg, #10E5A0 0%, #14E5E5 50%, #5E7CFF 100%);
+  background: linear-gradient(90deg, #0EA5E9 0%, #F43F5E 50%, #A855F7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -106,22 +107,22 @@ body {
 
 /* Glow effects */
 .glow-cyan {
-  box-shadow: 0 0 30px rgba(16, 229, 160, 0.35), 0 0 60px rgba(20, 229, 229, 0.15);
+  box-shadow: 0 0 30px rgba(14, 165, 233, 0.35), 0 0 60px rgba(244, 63, 94, 0.18);
 }
 
 .glow-purple {
-  box-shadow: 0 0 30px rgba(94, 124, 255, 0.35), 0 0 60px rgba(94, 124, 255, 0.15);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.35), 0 0 60px rgba(168, 85, 247, 0.15);
 }
 
 .glow-text {
-  text-shadow: 0 0 24px rgba(16, 229, 160, 0.6), 0 0 48px rgba(94, 124, 255, 0.3);
+  text-shadow: 0 0 24px rgba(14, 165, 233, 0.6), 0 0 48px rgba(168, 85, 247, 0.3);
 }
 
 /* Grid pattern background */
 .grid-bg {
   background-image:
-    linear-gradient(rgba(16, 229, 160, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(16, 229, 160, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(14, 165, 233, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 165, 233, 0.06) 1px, transparent 1px);
   background-size: 60px 60px;
   background-position: -1px -1px;
   mask-image: radial-gradient(ellipse 80% 60% at center, black 30%, transparent 80%);
@@ -191,12 +192,12 @@ body {
 .beam-border {
   position: relative;
   background: linear-gradient(#0A0A12, #0A0A12) padding-box,
-              linear-gradient(135deg, rgba(16,229,160,0.5), rgba(94,124,255,0.5)) border-box;
+              linear-gradient(135deg, rgba(14,165,233,0.5), rgba(168,85,247,0.5)) border-box;
   border: 1px solid transparent;
 }
 
 /* Spotlight cursor */
 .spotlight {
   background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-              rgba(16, 229, 160, 0.08), transparent 40%);
+              rgba(14, 165, 233, 0.08), transparent 40%);
 }
