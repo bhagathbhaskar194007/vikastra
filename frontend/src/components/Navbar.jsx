@@ -7,6 +7,7 @@ const links = [
   { href: "#services", label: "Services", id: NAV.linkServices },
   { href: "#about", label: "About", id: NAV.linkAbout },
   { href: "#portfolio", label: "Work", id: NAV.linkPortfolio },
+  { href: "#team", label: "Team", id: "nav-link-team" },
   { href: "#contact", label: "Contact", id: NAV.linkContact },
 ];
 

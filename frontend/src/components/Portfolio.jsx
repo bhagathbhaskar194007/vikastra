@@ -1,50 +1,4 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
-
-const projects = [
-  {
-    title: "Aurora Commerce",
-    cat: "E-commerce Platform",
-    tag: "Web / Cloud",
-    img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=srgb&fm=jpg&w=1200&q=80",
-    color: "from-sky-500 to-blue-600",
-  },
-  {
-    title: "PulseGrid IoT",
-    cat: "Smart Home Network",
-    tag: "IoT / Embedded",
-    img: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?crop=entropy&cs=srgb&fm=jpg&w=1200&q=80",
-    color: "from-sky-400 to-sky-500",
-  },
-  {
-    title: "Nimbus AI Assistant",
-    cat: "Enterprise AI Chatbot",
-    tag: "AI / LLM",
-    img: "https://images.unsplash.com/photo-1517512006864-7edc3b933137?crop=entropy&cs=srgb&fm=jpg&w=1200&q=80",
-    color: "from-rose-500 to-violet-600",
-  },
-  {
-    title: "MedSync Mobile",
-    cat: "Healthcare App",
-    tag: "Mobile / Cross-Platform",
-    img: "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?crop=entropy&cs=srgb&fm=jpg&w=1200&q=80",
-    color: "from-violet-500 to-rose-500",
-  },
-  {
-    title: "Quantum Dashboard",
-    cat: "SaaS Analytics Platform",
-    tag: "Software / Data",
-    img: "https://images.unsplash.com/photo-1637393933151-d37306ed606d?crop=entropy&cs=srgb&fm=jpg&w=1200&q=80",
-    color: "from-orange-400 to-rose-500",
-  },
-  {
-    title: "Stellar Learn",
-    cat: "EdTech Training Platform",
-    tag: "Web / Courses",
-    img: "https://images.unsplash.com/photo-1615803697515-3cb782c2a65a?crop=entropy&cs=srgb&fm=jpg&w=1200&q=80",
-    color: "from-violet-400 to-sky-500",
-  },
-];
 
 export default function Portfolio() {
   return (
@@ -66,57 +20,44 @@ export default function Portfolio() {
             </h2>
           </div>
           <p className="text-slate-400 max-w-md text-base">
-            A curated showcase of products we've crafted across web, mobile, IoT,
-            and AI — each engineered for scale.
+            A curated showcase of products we've crafted across web, mobile, IoT —
+            each engineered for scale.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((p, i) => (
-            <motion.a
-              key={p.title}
+        {/* Empty state — projects coming soon */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="relative overflow-hidden rounded-3xl glass-strong px-6 py-16 sm:py-24 text-center"
+        >
+          {/* Decorative gradient orbs */}
+          <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-72 h-72 rounded-full bg-sky-500/10 blur-[100px] pointer-events-none" />
+          <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-72 h-72 rounded-full bg-violet-500/10 blur-[100px] pointer-events-none" />
+
+          <div className="relative">
+            <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-sky-400 mb-4">
+              Coming Soon
+            </div>
+            <h3 className="font-display text-3xl sm:text-4xl font-bold tracking-tight mb-4 max-w-2xl mx-auto">
+              We're crafting something
+              <span className="gradient-text"> extraordinary</span>.
+            </h3>
+            <p className="text-slate-400 max-w-xl mx-auto leading-relaxed mb-8">
+              Our case studies and selected work will be unveiled here shortly.
+              Want a sneak peek of what we've been building? Get in touch.
+            </p>
+            <a
               href="#contact"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.06 }}
-              data-testid={`portfolio-card-${i}`}
-              className="group relative overflow-hidden rounded-2xl aspect-[4/5] cursor-pointer block"
+              data-testid="portfolio-cta-contact"
+              className="inline-flex items-center gap-2 rounded-full px-6 py-3 font-semibold text-[#05050A] bg-gradient-to-r from-sky-300 to-sky-500 hover:from-sky-200 hover:to-sky-400 transition-all duration-300 glow-cyan hover:-translate-y-0.5"
             >
-              <img
-                src={p.img}
-                alt={p.title}
-                loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/40 to-transparent" />
-              <div
-                className={`absolute inset-0 bg-gradient-to-t ${p.color} opacity-0 mix-blend-overlay group-hover:opacity-40 transition-opacity duration-500`}
-              />
-
-              <div className="absolute top-5 left-5 right-5 flex items-start justify-between">
-                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/80 px-3 py-1.5 rounded-full bg-black/40 backdrop-blur-md border border-white/10">
-                  {p.tag}
-                </span>
-                <div className="w-10 h-10 rounded-full grid place-items-center bg-white/10 backdrop-blur-md border border-white/15 opacity-0 group-hover:opacity-100 group-hover:rotate-45 transition-all duration-300">
-                  <ArrowUpRight className="w-4 h-4 text-white" />
-                </div>
-              </div>
-
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-sky-400 mb-2">
-                  {p.cat}
-                </div>
-                <h3 className="font-display text-2xl font-semibold text-white tracking-tight">
-                  {p.title}
-                </h3>
-              </div>
-
-              {/* Hover border accent */}
-              <div className="absolute inset-0 rounded-2xl border border-white/10 group-hover:border-sky-400/50 transition-colors duration-500 pointer-events-none" />
-            </motion.a>
-          ))}
-        </div>
+              Request a Preview
+            </a>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
