@@ -104,17 +104,6 @@ function ServiceCard({ s, i }) {
       </h3>
       <p className="text-sm text-slate-400 leading-relaxed mb-6">{s.desc}</p>
 
-      <div className="flex flex-wrap gap-2 mb-6">
-        {s.tags.map((t) => (
-          <span
-            key={t}
-            className="font-mono text-[10px] uppercase tracking-[0.15em] px-2.5 py-1 rounded-full border border-white/10 text-slate-400"
-          >
-            {t}
-          </span>
-        ))}
-      </div>
-
       <div className="flex items-center gap-2 text-sky-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         Learn more
         <ArrowUpRight className="w-4 h-4" />

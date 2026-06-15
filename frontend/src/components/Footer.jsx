@@ -38,10 +38,6 @@ const cols = [
     title: "Company",
     links: ["About", "Work", "Careers", "Contact", "Blog"],
   },
-  {
-    title: "Resources",
-    links: ["Courses", "Case Studies", "Documentation", "Support", "Privacy"],
-  },
 ];
 
 export default function Footer() {
@@ -74,7 +70,7 @@ export default function Footer() {
 
         <div className="grid lg:grid-cols-12 gap-12 mb-16">
           {/* Brand */}
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-6">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-sky-400 to-violet-500 grid place-items-center glow-cyan">
                 <span className="font-display text-lg font-black text-[#05050A]">V</span>
@@ -126,7 +122,7 @@ export default function Footer() {
             </div>
           ))}
 
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-2">
             <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-sky-400 mb-4">
               Reach
             </div>
