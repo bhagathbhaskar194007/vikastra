@@ -142,7 +142,7 @@ export default function Services() {
         >
           <div className="inline-flex items-center gap-2 mb-5">
             <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-sky-400">
-              / 01 — Capabilities
+              Capabilities
             </span>
           </div>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] mb-6">

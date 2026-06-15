@@ -64,7 +64,7 @@ export default function Contact() {
             className="lg:col-span-2"
           >
             <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-sky-400">
-              / 04 — Let's Build
+              Let's Build
             </span>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] mt-5 mb-6">
               Start your
@@ -165,7 +165,7 @@ export default function Contact() {
                   name="name"
                   value={form.name}
                   onChange={onChange}
-                  placeholder="Jane Doe"
+                  placeholder="Name"
                   className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-sky-400/50 focus:bg-white/[0.06] transition"
                 />
               </div>
@@ -179,7 +179,7 @@ export default function Contact() {
                   name="email"
                   value={form.email}
                   onChange={onChange}
-                  placeholder="you@company.com"
+                  placeholder="Email"
                   className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-sky-400/50 focus:bg-white/[0.06] transition"
                 />
               </div>

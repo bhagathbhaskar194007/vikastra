@@ -13,7 +13,7 @@ export default function Portfolio() {
         >
           <div className="max-w-2xl">
             <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-sky-400">
-              / 03 — Selected Work
+              Selected Work
             </span>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] mt-5">
               Featured <span className="gradient-text">projects</span>.

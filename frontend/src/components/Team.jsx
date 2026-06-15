@@ -86,7 +86,7 @@ export default function Team() {
         >
           <div className="max-w-2xl">
             <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-sky-400">
-              / 04 — The Team
+              The Team
             </span>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] mt-5">
               Meet the <span className="gradient-text">founders</span>.

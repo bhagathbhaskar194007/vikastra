@@ -276,10 +276,30 @@ function useUniverseScene(mountRef) {
 }
 
 const pillars = [
-  { icon: Rocket, label: "Innovation", value: "01" },
-  { icon: Award, label: "Expertise", value: "02" },
-  { icon: Users, label: "Client-Focused", value: "03" },
-  { icon: ShieldCheck, label: "Reliability", value: "04" },
+  {
+    icon: Rocket,
+    label: "Innovation",
+    value: "01",
+    desc: "Transforming ideas into cutting-edge digital solutions through creativity and technology.",
+  },
+  {
+    icon: Award,
+    label: "Expertise",
+    value: "02",
+    desc: "Delivering high-quality web, mobile, software, and IoT solutions with technical excellence.",
+  },
+  {
+    icon: Users,
+    label: "Client-Focused",
+    value: "03",
+    desc: "Understanding client needs and building tailored solutions that create real value.",
+  },
+  {
+    icon: ShieldCheck,
+    label: "Reliability",
+    value: "04",
+    desc: "Ensuring secure, scalable, and dependable products with consistent performance.",
+  },
 ];
 
 export default function About() {
@@ -338,7 +358,7 @@ export default function About() {
             className="order-1 lg:order-2"
           >
             <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-sky-400">
-              / 02 — About Vikastra
+              About Vikastra
             </span>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] mt-5 mb-6">
               Engineering teams
@@ -356,7 +376,7 @@ export default function About() {
               and CTOs to translate ambitious roadmaps into shipped products — fast.
             </p>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {pillars.map((p) => {
                 const Icon = p.icon;
                 return (
@@ -368,9 +388,12 @@ export default function About() {
                       <Icon className="w-5 h-5 text-sky-400 group-hover:scale-110 transition" />
                       <span className="font-mono text-[10px] text-slate-600">{p.value}</span>
                     </div>
-                    <div className="font-display text-base font-semibold text-white">
+                    <div className="font-display text-base font-semibold text-white mb-2">
                       {p.label}
                     </div>
+                    <p className="text-[13px] text-slate-400 leading-relaxed">
+                      {p.desc}
+                    </p>
                   </div>
                 );
               })}
