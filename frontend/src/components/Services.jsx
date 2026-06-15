@@ -4,9 +4,7 @@ import {
   Smartphone,
   Code2,
   Cpu,
-  Brain,
   Layers,
-  GraduationCap,
   ArrowUpRight,
 } from "lucide-react";
 
@@ -16,21 +14,21 @@ const services = [
     title: "Web Development",
     desc: "Pixel-perfect, blazing-fast websites and web apps built with modern stacks — Next.js, React, and headless architectures.",
     tags: ["React", "Next.js", "Node"],
-    color: "from-cyan-400 to-blue-500",
+    color: "from-emerald-400 to-blue-500",
   },
   {
     icon: Smartphone,
     title: "Mobile App Development",
     desc: "Native and cross-platform iOS & Android apps with butter-smooth UX, offline-first design, and store-ready polish.",
     tags: ["React Native", "Flutter", "Swift"],
-    color: "from-purple-400 to-pink-500",
+    color: "from-indigo-400 to-teal-500",
   },
   {
     icon: Code2,
     title: "Software Development",
     desc: "Enterprise-grade software, custom SaaS platforms, and internal tools engineered for scale, security, and resilience.",
     tags: ["Python", "Go", "Cloud"],
-    color: "from-emerald-400 to-cyan-500",
+    color: "from-emerald-400 to-emerald-500",
   },
   {
     icon: Cpu,
@@ -40,25 +38,11 @@ const services = [
     color: "from-orange-400 to-rose-500",
   },
   {
-    icon: Brain,
-    title: "AI & Automation",
-    desc: "LLM-powered agents, computer vision, RAG pipelines, and intelligent automation that compounds your team's leverage.",
-    tags: ["LLMs", "Vision", "RAG"],
-    color: "from-fuchsia-400 to-purple-600",
-  },
-  {
     icon: Layers,
     title: "Project Development",
     desc: "Academic and industry projects — final-year, dissertation, and prototype builds delivered with mentorship and docs.",
     tags: ["B.Tech", "M.Tech", "PoC"],
-    color: "from-indigo-400 to-cyan-500",
-  },
-  {
-    icon: GraduationCap,
-    title: "Tech Courses & Training",
-    desc: "Cohort-based bootcamps and corporate training in MERN, AI, IoT, and DevOps — taught by working engineers.",
-    tags: ["Live", "Hands-on", "Certified"],
-    color: "from-yellow-300 to-orange-500",
+    color: "from-indigo-400 to-emerald-500",
   },
 ];
 
@@ -105,7 +89,7 @@ function ServiceCard({ s, i }) {
         className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
         style={{
           background:
-            "radial-gradient(400px circle at var(--mx,50%) var(--my,50%), rgba(0,229,255,0.12), transparent 50%)",
+            "radial-gradient(400px circle at var(--mx,50%) var(--my,50%), rgba(16, 229, 160,0.12), transparent 50%)",
         }}
       />
       <div
@@ -131,15 +115,15 @@ function ServiceCard({ s, i }) {
         ))}
       </div>
 
-      <div className="flex items-center gap-2 text-cyan-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div className="flex items-center gap-2 text-emerald-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         Learn more
         <ArrowUpRight className="w-4 h-4" />
       </div>
 
       {/* Corner accent */}
       <div className="absolute -top-px -right-px w-20 h-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-        <div className="absolute top-0 right-0 w-px h-12 bg-gradient-to-b from-cyan-400 to-transparent" />
-        <div className="absolute top-0 right-0 w-12 h-px bg-gradient-to-l from-cyan-400 to-transparent" />
+        <div className="absolute top-0 right-0 w-px h-12 bg-gradient-to-b from-emerald-400 to-transparent" />
+        <div className="absolute top-0 right-0 w-12 h-px bg-gradient-to-l from-emerald-400 to-transparent" />
       </div>
     </motion.div>
   );
@@ -157,12 +141,12 @@ export default function Services() {
           className="max-w-3xl mb-16"
         >
           <div className="inline-flex items-center gap-2 mb-5">
-            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-cyan-400">
+            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400">
               / 01 — Capabilities
             </span>
           </div>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] mb-6">
-            Seven verticals.
+            Five verticals.
             <br />
             <span className="gradient-text">One studio.</span>
           </h2>

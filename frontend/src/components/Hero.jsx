@@ -26,10 +26,10 @@ function useHeroScene(mountRef) {
 
     // Lights
     scene.add(new THREE.AmbientLight(0xffffff, 0.5));
-    const l1 = new THREE.PointLight(0x00e5ff, 2.5, 50);
+    const l1 = new THREE.PointLight(0x10e5a0, 2.5, 50);
     l1.position.set(10, 10, 10);
     scene.add(l1);
-    const l2 = new THREE.PointLight(0xb026ff, 2.5, 50);
+    const l2 = new THREE.PointLight(0x5e7cff, 2.5, 50);
     l2.position.set(-10, -5, -10);
     scene.add(l2);
     const l3 = new THREE.PointLight(0xffffff, 1.2, 30);
@@ -48,7 +48,7 @@ function useHeroScene(mountRef) {
       color: 0x0a0a18,
       metalness: 1,
       roughness: 0.15,
-      emissive: new THREE.Color(0x00e5ff),
+      emissive: new THREE.Color(0x10e5a0),
       emissiveIntensity: 0.45,
     });
     const core = new THREE.Mesh(coreGeo, coreMat);
@@ -57,7 +57,7 @@ function useHeroScene(mountRef) {
     // Wireframe outer
     const wireGeo = new THREE.IcosahedronGeometry(1.55, 1);
     const wireMat = new THREE.MeshBasicMaterial({
-      color: 0x00e5ff,
+      color: 0x14e5e5,
       wireframe: true,
       transparent: true,
       opacity: 0.25,
@@ -68,14 +68,14 @@ function useHeroScene(mountRef) {
     // Orbiting torus rings
     const ring1 = new THREE.Mesh(
       new THREE.TorusGeometry(2.2, 0.015, 16, 100),
-      new THREE.MeshBasicMaterial({ color: 0x00e5ff, transparent: true, opacity: 0.8 })
+      new THREE.MeshBasicMaterial({ color: 0x10e5a0, transparent: true, opacity: 0.85 })
     );
     ring1.rotation.x = Math.PI / 2;
     group.add(ring1);
 
     const ring2 = new THREE.Mesh(
       new THREE.TorusGeometry(2.5, 0.012, 16, 100),
-      new THREE.MeshBasicMaterial({ color: 0xb026ff, transparent: true, opacity: 0.7 })
+      new THREE.MeshBasicMaterial({ color: 0x5e7cff, transparent: true, opacity: 0.75 })
     );
     ring2.rotation.x = Math.PI / 3;
     ring2.rotation.y = Math.PI / 6;
@@ -83,7 +83,7 @@ function useHeroScene(mountRef) {
 
     const ring3 = new THREE.Mesh(
       new THREE.TorusGeometry(2.8, 0.01, 16, 100),
-      new THREE.MeshBasicMaterial({ color: 0x00e5ff, transparent: true, opacity: 0.5 })
+      new THREE.MeshBasicMaterial({ color: 0x14e5e5, transparent: true, opacity: 0.55 })
     );
     ring3.rotation.z = Math.PI / 3;
     group.add(ring3);
@@ -91,14 +91,14 @@ function useHeroScene(mountRef) {
     // Glow orbs
     const orb1 = new THREE.Mesh(
       new THREE.SphereGeometry(0.4, 32, 32),
-      new THREE.MeshBasicMaterial({ color: 0x00e5ff, transparent: true, opacity: 0.5 })
+      new THREE.MeshBasicMaterial({ color: 0x10e5a0, transparent: true, opacity: 0.5 })
     );
     orb1.position.set(3, 1.5, -2);
     scene.add(orb1);
 
     const orb2 = new THREE.Mesh(
       new THREE.SphereGeometry(0.32, 32, 32),
-      new THREE.MeshBasicMaterial({ color: 0xb026ff, transparent: true, opacity: 0.5 })
+      new THREE.MeshBasicMaterial({ color: 0x5e7cff, transparent: true, opacity: 0.5 })
     );
     orb2.position.set(-3, -1.5, -2);
     scene.add(orb2);
@@ -117,7 +117,7 @@ function useHeroScene(mountRef) {
     const pGeo = new THREE.BufferGeometry();
     pGeo.setAttribute("position", new THREE.BufferAttribute(positions, 3));
     const pMat = new THREE.PointsMaterial({
-      color: 0x00e5ff,
+      color: 0x10e5a0,
       size: 0.03,
       sizeAttenuation: true,
       transparent: true,
@@ -193,8 +193,8 @@ export default function Hero() {
       <div ref={mountRef} className="absolute inset-0 z-0" />
 
       <div className="absolute inset-0 grid-bg z-[1] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-cyan-500/10 blur-[120px] z-[1] pointer-events-none" />
-      <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] rounded-full bg-purple-500/15 blur-[100px] z-[1] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-emerald-500/10 blur-[120px] z-[1] pointer-events-none" />
+      <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] rounded-full bg-indigo-500/15 blur-[100px] z-[1] pointer-events-none" />
 
       <div className="container-vk relative z-10 pt-24 pb-12">
         <motion.div
@@ -204,7 +204,7 @@ export default function Hero() {
           className="flex items-center gap-2 mb-8"
         >
           <div className="glass inline-flex items-center gap-2 rounded-full px-4 py-2">
-            <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+            <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
             <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-slate-300">
               Innovating Since 2020
             </span>
@@ -241,7 +241,7 @@ export default function Hero() {
           <a
             href="#contact"
             data-testid={HERO.ctaStart}
-            className="group relative inline-flex items-center gap-2 rounded-full px-8 py-4 font-semibold text-[#05050A] bg-gradient-to-r from-cyan-300 to-cyan-500 hover:from-cyan-200 hover:to-cyan-400 transition-all duration-300 glow-cyan hover:-translate-y-0.5"
+            className="group relative inline-flex items-center gap-2 rounded-full px-8 py-4 font-semibold text-[#05050A] bg-gradient-to-r from-emerald-300 to-emerald-500 hover:from-emerald-200 hover:to-emerald-400 transition-all duration-300 glow-cyan hover:-translate-y-0.5"
           >
             Start Your Project
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -249,7 +249,7 @@ export default function Hero() {
           <a
             href="#services"
             data-testid={HERO.ctaExplore}
-            className="inline-flex items-center gap-2 rounded-full px-8 py-4 font-medium text-white border border-white/15 hover:border-cyan-400/50 hover:bg-white/5 transition-all duration-300 backdrop-blur-md"
+            className="inline-flex items-center gap-2 rounded-full px-8 py-4 font-medium text-white border border-white/15 hover:border-emerald-400/50 hover:bg-white/5 transition-all duration-300 backdrop-blur-md"
           >
             Explore Services
           </a>
@@ -262,9 +262,9 @@ export default function Hero() {
           className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl"
         >
           {[
-            { k: "120+", v: "Projects Delivered" },
-            { k: "45+", v: "Global Clients" },
-            { k: "7", v: "Service Verticals" },
+            { k: "5", v: "Projects Delivered" },
+            { k: "5", v: "Global Clients" },
+            { k: "5", v: "Service Verticals" },
             { k: "99.9%", v: "Client Retention" },
           ].map((s) => (
             <div key={s.v} className="border-l border-white/10 pl-4">
@@ -283,7 +283,7 @@ export default function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-slate-400"
       >
         <span className="font-mono text-[10px] uppercase tracking-[0.3em]">Scroll</span>
-        <div className="w-px h-10 bg-gradient-to-b from-cyan-400 to-transparent" />
+        <div className="w-px h-10 bg-gradient-to-b from-emerald-400 to-transparent" />
       </motion.div>
     </section>
   );

@@ -57,7 +57,7 @@ body {
 }
 
 ::selection {
-  background: rgba(0, 229, 255, 0.3);
+  background: rgba(16, 229, 160, 0.3);
   color: #fff;
 }
 
@@ -65,7 +65,7 @@ body {
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track { background: #05050A; }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #00E5FF 0%, #B026FF 100%);
+  background: linear-gradient(180deg, #10E5A0 0%, #14E5E5 50%, #5E7CFF 100%);
   border-radius: 6px;
 }
 
@@ -75,7 +75,7 @@ body {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(90deg, #00E5FF 0%, #7B5BFF 50%, #B026FF 100%);
+  background: linear-gradient(90deg, #10E5A0 0%, #14E5E5 50%, #5E7CFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -106,22 +106,22 @@ body {
 
 /* Glow effects */
 .glow-cyan {
-  box-shadow: 0 0 30px rgba(0, 229, 255, 0.35), 0 0 60px rgba(0, 229, 255, 0.15);
+  box-shadow: 0 0 30px rgba(16, 229, 160, 0.35), 0 0 60px rgba(20, 229, 229, 0.15);
 }
 
 .glow-purple {
-  box-shadow: 0 0 30px rgba(176, 38, 255, 0.35), 0 0 60px rgba(176, 38, 255, 0.15);
+  box-shadow: 0 0 30px rgba(94, 124, 255, 0.35), 0 0 60px rgba(94, 124, 255, 0.15);
 }
 
 .glow-text {
-  text-shadow: 0 0 24px rgba(0, 229, 255, 0.6), 0 0 48px rgba(176, 38, 255, 0.3);
+  text-shadow: 0 0 24px rgba(16, 229, 160, 0.6), 0 0 48px rgba(94, 124, 255, 0.3);
 }
 
 /* Grid pattern background */
 .grid-bg {
   background-image:
-    linear-gradient(rgba(0, 229, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 229, 255, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(16, 229, 160, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 229, 160, 0.06) 1px, transparent 1px);
   background-size: 60px 60px;
   background-position: -1px -1px;
   mask-image: radial-gradient(ellipse 80% 60% at center, black 30%, transparent 80%);
@@ -191,12 +191,12 @@ body {
 .beam-border {
   position: relative;
   background: linear-gradient(#0A0A12, #0A0A12) padding-box,
-              linear-gradient(135deg, rgba(0,229,255,0.5), rgba(176,38,255,0.5)) border-box;
+              linear-gradient(135deg, rgba(16,229,160,0.5), rgba(94,124,255,0.5)) border-box;
   border: 1px solid transparent;
 }
 
 /* Spotlight cursor */
 .spotlight {
   background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-              rgba(0, 229, 255, 0.08), transparent 40%);
+              rgba(16, 229, 160, 0.08), transparent 40%);
 }

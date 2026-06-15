@@ -33,7 +33,7 @@ export default function AdminLogin() {
   return (
     <div className="min-h-screen relative flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-60 pointer-events-none" />
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-cyan-500/10 blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-emerald-500/10 blur-[120px] pointer-events-none" />
 
       <a
         href="/"
@@ -51,11 +51,11 @@ export default function AdminLogin() {
         className="relative w-full max-w-md glass-strong rounded-3xl p-10"
       >
         <div className="flex items-center gap-3 mb-8">
-          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-cyan-400 to-purple-500 grid place-items-center glow-cyan">
+          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-400 to-indigo-500 grid place-items-center glow-cyan">
             <Lock className="w-5 h-5 text-[#05050A]" />
           </div>
           <div>
-            <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-cyan-400">
+            <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400">
               Vikastra • Console
             </div>
             <div className="font-display text-xl font-bold">Admin Sign In</div>
@@ -74,7 +74,7 @@ export default function AdminLogin() {
               onChange={(e) => setEmail(e.target.value)}
               autoFocus
               required
-              className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-400/50 transition"
+              className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-emerald-400/50 transition"
               placeholder="admin@vikastra.com"
             />
           </div>
@@ -88,7 +88,7 @@ export default function AdminLogin() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-400/50 transition"
+              className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-emerald-400/50 transition"
               placeholder="••••••••"
             />
           </div>
@@ -98,7 +98,7 @@ export default function AdminLogin() {
           type="submit"
           data-testid={ADMIN.loginSubmit}
           disabled={submitting}
-          className="mt-8 w-full inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 font-semibold text-[#05050A] bg-gradient-to-r from-cyan-300 to-cyan-500 hover:from-cyan-200 hover:to-cyan-400 glow-cyan transition-all disabled:opacity-70"
+          className="mt-8 w-full inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 font-semibold text-[#05050A] bg-gradient-to-r from-emerald-300 to-emerald-500 hover:from-emerald-200 hover:to-emerald-400 glow-cyan transition-all disabled:opacity-70"
         >
           {submitting ? (
             <>

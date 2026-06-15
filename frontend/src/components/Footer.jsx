@@ -26,7 +26,7 @@ export default function Footer() {
     <footer className="relative pt-24 pb-8 overflow-hidden border-t border-white/5">
       {/* Animated background */}
       <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] rounded-[100%] bg-gradient-to-t from-cyan-500/15 via-purple-500/10 to-transparent blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] rounded-[100%] bg-gradient-to-t from-emerald-500/15 via-indigo-500/10 to-transparent blur-[100px] pointer-events-none" />
 
       <div className="container-vk relative">
         {/* Marquee tag */}
@@ -38,7 +38,7 @@ export default function Footer() {
                   <span
                     key={`${k}-${i}`}
                     className={`font-display text-3xl sm:text-5xl font-black tracking-tighter ${
-                      t === "•" ? "text-cyan-400" : "text-white/10 hover:text-white/40 transition-colors"
+                      t === "•" ? "text-emerald-400" : "text-white/10 hover:text-white/40 transition-colors"
                     }`}
                   >
                     {t}
@@ -53,11 +53,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-5">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-400 to-purple-500 grid place-items-center glow-cyan">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-emerald-400 to-indigo-500 grid place-items-center glow-cyan">
                 <span className="font-display text-lg font-black text-[#05050A]">V</span>
               </div>
               <span className="font-display text-xl font-bold tracking-tight">
-                VIKASTRA<span className="text-cyan-400">.</span>
+                VIKASTRA<span className="text-emerald-400">.</span>
               </span>
             </div>
             <p className="text-slate-400 max-w-md leading-relaxed mb-8">
@@ -77,7 +77,7 @@ export default function Footer() {
                   href="#"
                   aria-label={label}
                   data-testid={`social-${label.toLowerCase()}`}
-                  className="w-10 h-10 rounded-full grid place-items-center border border-white/10 text-slate-400 hover:text-cyan-300 hover:border-cyan-400/40 hover:bg-cyan-400/5 transition"
+                  className="w-10 h-10 rounded-full grid place-items-center border border-white/10 text-slate-400 hover:text-emerald-300 hover:border-emerald-400/40 hover:bg-emerald-400/5 transition"
                 >
                   <Icon className="w-4 h-4" />
                 </a>
@@ -88,7 +88,7 @@ export default function Footer() {
           {/* Link columns */}
           {cols.map((col) => (
             <div key={col.title} className="lg:col-span-2">
-              <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-cyan-400 mb-4">
+              <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400 mb-4">
                 {col.title}
               </div>
               <ul className="space-y-3">
@@ -104,7 +104,7 @@ export default function Footer() {
           ))}
 
           <div className="lg:col-span-1">
-            <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-cyan-400 mb-4">
+            <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400 mb-4">
               Reach
             </div>
             <ul className="space-y-3">

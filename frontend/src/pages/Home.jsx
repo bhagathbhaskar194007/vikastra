@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import LogoMarquee from "../components/LogoMarquee";
 import Services from "../components/Services";
 import About from "../components/About";
 import Portfolio from "../components/Portfolio";
@@ -32,7 +31,6 @@ export default function Home() {
     <div id="top" className="relative bg-[#05050A] text-white">
       <Navbar />
       <Hero />
-      <LogoMarquee />
       <Services />
       <About />
       <Portfolio />

@@ -10,9 +10,7 @@ const services = [
   "Mobile App Development",
   "Software Development",
   "IoT Solutions",
-  "AI & Automation",
   "Project Development",
-  "Tech Courses & Training",
 ];
 
 export default function Contact() {
@@ -52,8 +50,8 @@ export default function Contact() {
     <section id="contact" className="section relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0 grid-bg opacity-50 pointer-events-none" />
-      <div className="absolute top-1/4 left-0 w-[400px] h-[400px] rounded-full bg-cyan-500/10 blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-purple-500/10 blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/4 left-0 w-[400px] h-[400px] rounded-full bg-emerald-500/10 blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-indigo-500/10 blur-[140px] pointer-events-none" />
 
       <div className="container-vk relative">
         <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
@@ -65,7 +63,7 @@ export default function Contact() {
             transition={{ duration: 0.7 }}
             className="lg:col-span-2"
           >
-            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-cyan-400">
+            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400">
               / 04 — Let's Build
             </span>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] mt-5 mb-6">
@@ -84,14 +82,14 @@ export default function Contact() {
                 className="flex items-start gap-4 group"
                 data-testid="contact-info-email"
               >
-                <div className="w-11 h-11 rounded-xl bg-cyan-400/10 border border-cyan-400/20 grid place-items-center group-hover:bg-cyan-400/20 transition">
-                  <Mail className="w-4 h-4 text-cyan-400" />
+                <div className="w-11 h-11 rounded-xl bg-emerald-400/10 border border-emerald-400/20 grid place-items-center group-hover:bg-emerald-400/20 transition">
+                  <Mail className="w-4 h-4 text-emerald-400" />
                 </div>
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 mb-1">
                     Email
                   </div>
-                  <div className="text-white group-hover:text-cyan-300 transition break-all">
+                  <div className="text-white group-hover:text-emerald-300 transition break-all">
                     vikasthratechnologies@gmail.com
                   </div>
                 </div>
@@ -102,14 +100,14 @@ export default function Contact() {
                 className="flex items-start gap-4 group"
                 data-testid="contact-info-phone-1"
               >
-                <div className="w-11 h-11 rounded-xl bg-purple-400/10 border border-purple-400/20 grid place-items-center group-hover:bg-purple-400/20 transition">
-                  <Phone className="w-4 h-4 text-purple-300" />
+                <div className="w-11 h-11 rounded-xl bg-indigo-400/10 border border-indigo-400/20 grid place-items-center group-hover:bg-indigo-400/20 transition">
+                  <Phone className="w-4 h-4 text-indigo-300" />
                 </div>
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 mb-1">
                     Primary
                   </div>
-                  <div className="text-white group-hover:text-purple-300 transition">
+                  <div className="text-white group-hover:text-indigo-300 transition">
                     +91 70128 45860
                   </div>
                 </div>
@@ -120,14 +118,14 @@ export default function Contact() {
                 className="flex items-start gap-4 group"
                 data-testid="contact-info-phone-2"
               >
-                <div className="w-11 h-11 rounded-xl bg-purple-400/10 border border-purple-400/20 grid place-items-center group-hover:bg-purple-400/20 transition">
-                  <Phone className="w-4 h-4 text-purple-300" />
+                <div className="w-11 h-11 rounded-xl bg-indigo-400/10 border border-indigo-400/20 grid place-items-center group-hover:bg-indigo-400/20 transition">
+                  <Phone className="w-4 h-4 text-indigo-300" />
                 </div>
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 mb-1">
                     Secondary
                   </div>
-                  <div className="text-white group-hover:text-purple-300 transition">
+                  <div className="text-white group-hover:text-indigo-300 transition">
                     +91 80867 56642
                   </div>
                 </div>
@@ -168,7 +166,7 @@ export default function Contact() {
                   value={form.name}
                   onChange={onChange}
                   placeholder="Jane Doe"
-                  className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-400/50 focus:bg-white/[0.06] transition"
+                  className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-emerald-400/50 focus:bg-white/[0.06] transition"
                 />
               </div>
               <div>
@@ -182,7 +180,7 @@ export default function Contact() {
                   value={form.email}
                   onChange={onChange}
                   placeholder="you@company.com"
-                  className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-400/50 focus:bg-white/[0.06] transition"
+                  className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-emerald-400/50 focus:bg-white/[0.06] transition"
                 />
               </div>
             </div>
@@ -198,7 +196,7 @@ export default function Contact() {
                   value={form.phone}
                   onChange={onChange}
                   placeholder="+91 00000 00000"
-                  className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-400/50 focus:bg-white/[0.06] transition"
+                  className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-emerald-400/50 focus:bg-white/[0.06] transition"
                 />
               </div>
               <div>
@@ -210,7 +208,7 @@ export default function Contact() {
                   name="service"
                   value={form.service}
                   onChange={onChange}
-                  className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-cyan-400/50 focus:bg-white/[0.06] transition appearance-none"
+                  className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-emerald-400/50 focus:bg-white/[0.06] transition appearance-none"
                 >
                   <option value="" className="bg-[#0A0A12]">Select a service</option>
                   {services.map((s) => (
@@ -231,7 +229,7 @@ export default function Contact() {
                 onChange={onChange}
                 rows={5}
                 placeholder="Tell us about your project, timeline, and goals…"
-                className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-400/50 focus:bg-white/[0.06] transition resize-none"
+                className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-emerald-400/50 focus:bg-white/[0.06] transition resize-none"
               />
             </div>
 
@@ -239,7 +237,7 @@ export default function Contact() {
               type="submit"
               data-testid={CONTACT.submit}
               disabled={loading || sent}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 font-semibold text-[#05050A] bg-gradient-to-r from-cyan-300 to-cyan-500 hover:from-cyan-200 hover:to-cyan-400 glow-cyan transition-all duration-300 hover:-translate-y-0.5 disabled:opacity-70 disabled:cursor-not-allowed"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 font-semibold text-[#05050A] bg-gradient-to-r from-emerald-300 to-emerald-500 hover:from-emerald-200 hover:to-emerald-400 glow-cyan transition-all duration-300 hover:-translate-y-0.5 disabled:opacity-70 disabled:cursor-not-allowed"
             >
               {loading ? (
                 <>
