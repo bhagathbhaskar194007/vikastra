@@ -1,0 +1,132 @@
+{
+  "theme": "dark",
+  "archetype": "7_Electric_Neon_Luxury",
+  "emotional_tone": "Premium, Futuristic, Immersive, Authoritative, High-Performance",
+  "typography": {
+    "fonts": {
+      "headings": "Outfit",
+      "body": "Satoshi",
+      "mono_accent": "JetBrains Mono"
+    },
+    "scale": {
+      "h1": "text-5xl sm:text-6xl lg:text-7xl tracking-tighter font-black",
+      "h2": "text-4xl sm:text-5xl tracking-tight font-bold",
+      "h3": "text-2xl sm:text-3xl tracking-tight font-semibold",
+      "h4": "text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "labels": "text-xs uppercase tracking-[0.2em] font-bold"
+    },
+    "rules": [
+      "Never center headings by default; align left for narrative flow unless in hero or center-focused section.",
+      "Use JetBrains Mono for tech-focused metrics, overlines, or developer-centric details."
+    ]
+  },
+  "colors": {
+    "background": {
+      "main": "#05050A",
+      "secondary": "#0A0A12",
+      "tertiary": "#12121A"
+    },
+    "text": {
+      "primary": "#F8FAFC",
+      "secondary": "#94A3B8",
+      "muted": "#475569"
+    },
+    "brand": {
+      "primary": "#00E5FF",
+      "accent_purple": "#B026FF",
+      "accent_silver": "#E2E8F0"
+    },
+    "surfaces": {
+      "glass": "bg-white/5 backdrop-blur-xl border border-white/10",
+      "glass_hover": "hover:bg-white/10 transition-colors duration-300",
+      "card": "bg-[#0A0A12] border border-white/5"
+    },
+    "gradients": {
+      "primary_text": "bg-clip-text text-transparent bg-gradient-to-r from-[#00E5FF] to-[#B026FF]",
+      "glow_effect": "bg-gradient-to-tr from-[#00E5FF]/20 to-[#B026FF]/20 blur-3xl"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing, Optical Alignment, The Control Room for Dashboard",
+    "section_padding": "py-24 sm:py-32",
+    "container_width": "max-w-7xl mx-auto px-6 lg:px-8",
+    "grids": {
+      "marketing_bento": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8",
+      "dashboard_control": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+      "services_grid": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-gradient-to-r from-[#00E5FF] to-[#00B4D8] text-[#05050A] font-bold px-8 py-4 rounded-full shadow-[0_0_20px_rgba(0,229,255,0.4)] hover:shadow-[0_0_30px_rgba(0,229,255,0.6)] transition-all duration-300 transform hover:-translate-y-1",
+      "secondary": "bg-transparent border border-white/20 text-white px-8 py-4 rounded-full hover:bg-white/5 transition-all duration-300 backdrop-blur-md"
+    },
+    "cards": {
+      "service_card": "relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 p-8 group",
+      "portfolio_card": "relative overflow-hidden rounded-2xl group cursor-pointer aspect-video"
+    },
+    "navigation": {
+      "header": "fixed top-0 w-full z-50 bg-[#05050A]/70 backdrop-blur-xl border-b border-white/10 transition-all duration-300",
+      "links": "text-sm font-medium text-slate-300 hover:text-white transition-colors"
+    },
+    "inputs": {
+      "form_field": "w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#00E5FF] focus:border-transparent transition-all placeholder-slate-500"
+    }
+  },
+  "motion_and_3d": {
+    "global": {
+      "framer_motion": "Use for scroll reveals, text staggers, and glass card hover states (3D tilt effect).",
+      "smooth_scroll": "Lenis for premium scrolling momentum."
+    },
+    "three_js_hero": {
+      "description": "Large floating 3D 'V' monogram in the center, surrounded by interactive particles and glowing network lines.",
+      "libraries": "@react-three/fiber, @react-three/drei, three",
+      "lighting": "Use PointLights and ambient light to create a moody, glowing effect reflecting off the 3D V geometry."
+    },
+    "interactions": {
+      "hover_tilt": "Use Framer Motion useMotionValue and useTransform for realistic 3D card tilts in the Services section.",
+      "glow_reveal": "Cards should have a radial gradient glow following the mouse pointer."
+    }
+  },
+  "media": {
+    "images": {
+      "portfolio_placeholders": [
+        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwyfHxmdXR1cmlzdGljJTIwc29mdHdhcmUlMjB0ZWNobm9sb2d5JTIwZGFya3xlbnwwfHx8fDE3ODE1NDgwNDF8MA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHw0fHxmdXR1cmlzdGljJTIwc29mdHdhcmUlMjB0ZWNobm9sb2d5JTIwZGFya3xlbnwwfHx8fDE3ODE1NDgwNDF8MA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1517512006864-7edc3b933137?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwzfHxmdXR1cmlzdGljJTIwc29mdHdhcmUlMjB0ZWNobm9sb2d5JTIwZGFya3xlbnwwfHx8fDE3ODE1NDgwNDF8MA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwxfHxmdXR1cmlzdGljJTIwc29mdHdhcmUlMjB0ZWNobm9sb2d5JTIwZGFya3xlbnwwfHx8fDE3ODE1NDgwNDF8MA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1637393933151-d37306ed606d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBnbGFzcyUyMG9mZmljZSUyMGFyY2hpdGVjdHVyZSUyMGRhcmt8ZW58MHx8fHwxNzgxNTQ4MDQxfDA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1615803697515-3cb782c2a65a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBnbGFzcyUyMG9mZmljZSUyMGFyY2hpdGVjdHVyZSUyMGRhcmt8ZW58MHx8fHwxNzgxNTQ4MDQxfDA&ixlib=rb-4.1.0&q=85"
+      ],
+      "background_elements": [
+        "https://images.unsplash.com/photo-1762279388988-3f8abcc7dca2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMDNkJTIwcGFydGljbGVzJTIwbmV0d29yayUyMG5lb24lMjBkYXJrfGVufDB8fHx8MTc4MTU0ODA1MHww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMDNkJTIwcGFydGljbGVzJTIwbmV0d29yayUyMG5lb24lMjBkYXJrfGVufDB8fHx8MTc4MTU0ODA1MHww&ixlib=rb-4.1.0&q=85"
+      ]
+    }
+  },
+  "testing": {
+    "attributes": [
+      "All interactive components MUST use data-testid attributes",
+      "Example: data-testid='hero-cta-button', data-testid='contact-form-submit'"
+    ]
+  },
+  "instructions_to_main_agent": {
+    "overall": "Implement a hybrid architecture: purely custom HTML/Tailwind with Framer Motion for the marketing site sections, and Shadcn UI components for the backend admin dashboard and contact form to ensure flawless functionality.",
+    "libraries_to_install": [
+      "lucide-react",
+      "framer-motion",
+      "three",
+      "@react-three/fiber",
+      "@react-three/drei",
+      "lenis",
+      "@fontsource/outfit",
+      "@fontsource/satoshi"
+    ],
+    "hero_section": "Build a Canvas wrapper for the Three.js scene. Render a 3D letter 'V' geometry with metallic/glass material and float it using Drei's Float component. Use Points for the particle background.",
+    "services_section": "Create 7 glassmorphic cards. Use Framer Motion's useMotionValue to track mouse position on the card and apply rotateX/rotateY transforms on hover. Do not use generic 2D hover effects.",
+    "portfolio_section": "Create a smooth horizontal scroll carousel or bento grid using the provided 6 placeholder images.",
+    "contact_form": "Build using Shadcn Form/Input components. Customize Shadcn styles heavily by removing the default white backgrounds, switching to 'bg-white/5 border-white/10', and altering focus rings to #00E5FF to blend perfectly with the dark theme.",
+    "admin_dashboard": "Create a distinct '/admin' route layout. Keep it dark mode but utilize the 'Control Room' grid density. It should list incoming leads in a data table (Shadcn Table) with stats like total inquiries, recent requests, etc. Use 1px solid strokes instead of heavy shadows for dashboard cards."
+  }
+}
