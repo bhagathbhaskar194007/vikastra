@@ -200,7 +200,78 @@ async def admin_stats(_: dict = Depends(get_current_user)):
 
 
 app.include_router(api_router)
+from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
 
+app = FastAPI()  # This should match your existing app definition
+
+@app.get("/", response_class=HTMLResponse)
+async def read_root():
+    return """
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Vikastra API Dashboard</title>
+            <style>
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    background-color: #0f172a;
+                    color: #f8fafc;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                    margin: 0;
+                }
+                .card {
+                    background-color: #1e293b;
+                    padding: 2.5rem;
+                    border-radius: 12px;
+                    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+                    text-align: center;
+                    max-width: 450px;
+                }
+                h1 { color: #38bdf8; margin-top: 0; }
+                p { color: #94a3b8; line-height: 1.6; }
+                .btn {
+                    display: inline-block;
+                    background-color: #38bdf8;
+                    color: #0f172a;
+                    padding: 0.75rem 1.5rem;
+                    border-radius: 6px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    margin-top: 1.5rem;
+                    transition: background 0.2s;
+                }
+                .btn:hover { background-color: #0ea5e9; }
+                .status {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    color: #4ade80;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+                .dot {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #4ade80;
+                    border-radius: 50%;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="card">
+                <div class="status"><span class="dot"></span> Service Live</div>
+                <h1>Welcome to Vikastra</h1>
+                <p>Your backend service is compiled and successfully connected to the database cluster.</p>
+                <a href="/docs" class="btn">Explore Interactive API Docs</a>
+            </div>
+        </body>
+    </html>
+    """
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
