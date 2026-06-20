@@ -148,7 +148,7 @@ async def me(user: dict = Depends(get_current_user)):
 
 import requests
 
-GOOGLE_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_URL_HERE"
+GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyZQBhRyw98MnHBLy3jBNSfF29QvxjlstOGR03xi3s-DH7M9glnBQ_lOF2BFyeZM1aL/exec"
 
 @api_router.post("/contact")
 async def create_lead(payload: ContactCreate):
