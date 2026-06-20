@@ -146,13 +146,21 @@ async def me(user: dict = Depends(get_current_user)):
     return UserOut(id=user["id"], email=user["email"], name=user["name"], role=user["role"])
 
 
-@api_router.post("/contact", response_model=Lead)
+import requests
+
+GOOGLE_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_URL_HERE"
+
+@api_router.post("/contact")
 async def create_lead(payload: ContactCreate):
-    lead = Lead(**payload.model_dump())
-    doc = lead.model_dump()
-    doc["created_at"] = doc["created_at"].isoformat()
-    await db.leads.insert_one(doc)
-    return lead
+
+    requests.post(
+        GOOGLE_SCRIPT_URL,
+        json=payload.model_dump()
+    )
+
+    return {
+        "message": "Lead stored successfully"
+    }
 
 
 @api_router.get("/admin/leads", response_model=List[Lead])
