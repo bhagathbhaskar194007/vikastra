@@ -34,7 +34,16 @@ export default function Contact() {
     }
     setLoading(true);
     try {
-      await api.post("/contact", form);
+      await fetch(
+  "https://script.google.com/macros/s/AKfycbxq1cC_ZDrRGRxyEZYftGRXoT_AXdGG-drhhdNVLa03MOJh4hshIXFEpqVPAIbpyrY8/exec",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(form),
+  }
+);
       setSent(true);
       toast.success("Message sent! We'll be in touch within 24 hours.");
       setForm({ name: "", email: "", phone: "", service: "", message: "" });
