@@ -38,6 +38,7 @@ export default function Contact() {
   "https://script.google.com/macros/s/AKfycbxq1cC_ZDrRGRxyEZYftGRXoT_AXdGG-drhhdNVLa03MOJh4hshIXFEpqVPAIbpyrY8/exec",
   {
     method: "POST",
+    mode: "no-cors",
     headers: {
       "Content-Type": "application/json",
     },
