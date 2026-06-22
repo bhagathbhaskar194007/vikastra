@@ -104,7 +104,7 @@ export default function Team() {
             </h2>
           </div>
           <p className="text-slate-400 max-w-md text-base">
-            Three minds, one studio — the people shipping Vikastra's vision into
+            Four minds, one studio — the people shipping Vikastra's vision into
             the future.
           </p>
         </motion.div>
@@ -208,8 +208,9 @@ export default function Team() {
               <p className="text-slate-400 leading-relaxed mb-4">
                 Vikastra Technologies was founded by{" "}
                 <span className="text-white font-medium">D. Bhagath Bhaskar Unnithan</span>,{" "}
-                <span className="text-white font-medium">Salman Fariz</span>, and{" "}
-                <span className="text-white font-medium">Adarsh S</span> — three technology
+                <span className="text-white font-medium">Salman Fariz</span>,{" "}
+                <span className="text-white font-medium">Sneha S Lal</span>, and{" "}
+                <span className="text-white font-medium">Adarsh S</span> — four technology
                 enthusiasts united by a vision to create innovative digital solutions.
               </p>
               <p className="text-slate-400 leading-relaxed">
