@@ -52,7 +52,7 @@ const members = [
     badge: "Technology",
     socialLinks: {
       instagram: "https://www.instagram.com/_sa.lman__?igsh=ZXhkbmJsbWFmZ2l6",
-      x:"https://x.com/SalmanFarizA",
+      x:"https://x.net/SalmanFarizA",
       threads:"https://www.threads.com/@_sa.lman__",
       Linkedin:"https://www.linkedin.com/in/d-bhagath-bhaskar-unnithan-6b8a713a5?utm_source=share_via&utm_content=profile&utm_medium=member_android"
     }
@@ -69,7 +69,7 @@ const members = [
     socialLinks: {
       instagram: "https://www.instagram.com/_adarshhhh____?igsh=MXhuaWw4ZGQ5bTRvdA==",
       x:"https://x.com/Bhagath_194_007",
-      threads:"https://www.threads.com/@_adarshhhh____",
+      threads:"https://www.threads.net/@_adarshhhh____",
       Linkedin:"https://www.linkedin.com/in/d-bhagath-bhaskar-unnithan-6b8a713a5?utm_source=share_via&utm_content=profile&utm_medium=member_android"
     }
   },
@@ -85,7 +85,7 @@ const members = [
     socialLinks: {
       instagram: "https://www.instagram.com/_snehas_lal_?igsh=azFseXY5d3lzMWtl",
       x:"https://x.com/Bhagath_194_007",
-      threads:"https://www.threads.com/@_snehas_lal_",
+      threads:"https://www.threads.net/@_snehas_lal_",
       Linkedin:"https://www.linkedin.com/in/d-bhagath-bhaskar-unnithan-6b8a713a5?utm_source=share_via&utm_content=profile&utm_medium=member_android"
     }
   } 
