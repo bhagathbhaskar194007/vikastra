@@ -92,14 +92,15 @@ const members = [
 ];
 
 // Company's official social media profiles
-const companyLinks = {
+const companyLinks = [
+{
   instagram: "https://www.instagram.com/vikastratechnologies?igsh=MTJoMDE3Zmk3YzAwZg==", // Replaceing with our company link
   x: "https://x.com/VikastraTech",                     // Replace with our company link
   threads: "https://www.threads.net/@vikastratechnologies",    // Replace with our company link
   linkedin: "https://www.linkedin.com/company/vikastra", // Replace with our company link
   email: "vikasthratechnologies@gmail.com"                  // Replace with our company email
 };
-
+]
 const socials = [
   { Icon : InstagramIcon , label : "Instagram", url: companyLinks.instagram } ,
   { Icon : XIcon , label : "X", url: companyLinks.x } ,
