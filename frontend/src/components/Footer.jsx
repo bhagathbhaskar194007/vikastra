@@ -83,7 +83,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-3">
              {[
-  { Icon: InstagramIcon, label: "Instagram", url: "https://instagram.com/YOUR_USERNAME" },
+  { Icon: InstagramIcon, label: "Instagram", url: "https://www.instagram.com/vikastratechnologies?igsh=MTJoMDE3Zmk3YzAwZg==" },
   { Icon: XIcon, label: "X", url: "https://x.com/YOUR_USERNAME" },
   { Icon: ThreadsIcon, label: "Threads", url: "https://threads.net/@YOUR_USERNAME" },
   { Icon: Linkedin, label: "LinkedIn", url: "https://linkedin.com/company/YOUR_COMPANY" },
