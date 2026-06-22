@@ -34,6 +34,7 @@ const members = [
     initials: "DB",
     accent: "from-sky-400 to-sky-600",
     badge: "Leadership",
+    socialLinks: { instagram: "https://www.instagram.com/bhagath_bhaskar?igsh=MTA1aWFsN2llYXBnYg==" }
   },
   {
     name: "Salman Fariz",
