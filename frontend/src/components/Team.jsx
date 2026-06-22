@@ -35,12 +35,7 @@ const members = [
     accent: "from-sky-400 to-sky-600",
     badge: "Leadership",
     socialLinks: { 
-      instagram: "https://www.instagram.com/bhagath_bhaskar?igsh=MTA1aWFsN2llYXBnYg==",
-      threads: "https://x.com/Bhagath_194_007",
-      linkedin: "https://www.threads.com/@bhagath_bhaskar",
-      x: "https://www.linkedin.com/in/d-bhagath-bhaskar-unnithan-6b8a713a5?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-    }
-    
+      instagram: "https://www.instagram.com/bhagath_bhaskar?igsh=MTA1aWFsN2llYXBnYg==",}   
   },
   {
     name: "Salman Fariz",
