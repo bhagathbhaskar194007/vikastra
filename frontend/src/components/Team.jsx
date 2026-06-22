@@ -39,6 +39,7 @@ const members = [
       x:"https://x.com/Bhagath_194_007",
       threads:"https://www.threads.com/@bhagath_bhaskar",
       Linkedin:"https://www.linkedin.com/in/d-bhagath-bhaskar-unnithan-6b8a713a5?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    }
   },
   {
     name: "Salman Fariz",
