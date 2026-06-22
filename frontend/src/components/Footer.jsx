@@ -75,6 +75,10 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-sky-400 to-violet-500 grid place-items-center glow-cyan">
                 <span className="font-display text-lg font-black text-[#05050A]">V</span>
               </div>
+              <span className="font-display text-xl font-bond tracking-tight">
+                VIKASTRA<span className="text-sky-400">.</span>
+              </span>
+              
             </div>
             <p className="text-slate-400 max-w-md leading-relaxed mb-8">
               We build cinematic digital experiences — web, mobile, IoT, and AI —
@@ -84,8 +88,8 @@ export default function Footer() {
             <div className="flex items-center gap-3">
              {[
   { Icon: InstagramIcon, label: "Instagram", url: "https://www.instagram.com/vikastratechnologies?igsh=MTJoMDE3Zmk3YzAwZg==" },
-  { Icon: XIcon, label: "X", url: "https://x.com/YOUR_USERNAME" },
-  { Icon: ThreadsIcon, label: "Threads", url: "https://threads.net/@YOUR_USERNAME" },
+  { Icon: XIcon, label: "X", url: "https://x.com/VikastraTech" },
+  { Icon: ThreadsIcon, label: "Threads", url: "https://www.threads.com/@vikastra_technologies" },
   { Icon: Linkedin, label: "LinkedIn", url: "https://linkedin.com/company/YOUR_COMPANY" },
 ].map(({ Icon, label, url }) => (
   <a
