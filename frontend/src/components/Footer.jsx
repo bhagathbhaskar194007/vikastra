@@ -75,9 +75,6 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-sky-400 to-violet-500 grid place-items-center glow-cyan">
                 <span className="font-display text-lg font-black text-[#05050A]">V</span>
               </div>
-              <span className="font-display text-xl font-bold tracking-tight">
-                VIKASTRA<span className="text-sky-400">.</span>
-              </span>
             </div>
             <p className="text-slate-400 max-w-md leading-relaxed mb-8">
               We build cinematic digital experiences — web, mobile, IoT, and AI —
