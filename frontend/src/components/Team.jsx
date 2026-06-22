@@ -38,7 +38,7 @@ const members = [
       instagram: "https://www.instagram.com/bhagath_bhaskar?igsh=MTA1aWFsN2llYXBnYg==",
       x:"https://x.com/Bhagath_194_007",
       threads:"https://www.threads.com/@bhagath_bhaskar",
-      Linkedin:"https://www.linkedin.com/in/d-bhagath-bhaskar-unnithan-6b8a713a5?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      Linkedin:"https://www.linkedin.com/in/d-bhagath-bhaskar-unnithan-6b8a713a5?utm_source=share_via&utm_content=profile&utm_medium=member_android"
     }
   },
   {
@@ -50,7 +50,12 @@ const members = [
     initials: "SF",
     accent: "from-rose-400 to-rose-600",
     badge: "Technology",
-    socialLinks: { instagram: "https://www.instagram.com/_sa.lman__?igsh=ZXhkbmJsbWFmZ2l6" }
+    socialLinks: {
+      instagram: "https://www.instagram.com/_sa.lman__?igsh=ZXhkbmJsbWFmZ2l6",
+      x:"https://x.com/SalmanFarizA",
+      threads:"https://www.threads.com/@_sa.lman__",
+      Linkedin:"https://www.linkedin.com/in/d-bhagath-bhaskar-unnithan-6b8a713a5?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    }
   },
   {
     name: "Adarsh S",
@@ -61,7 +66,12 @@ const members = [
     initials: "AS",
     accent: "from-violet-400 to-violet-600",
     badge: "Operations",
-    socialLinks: { instagram: "https://www.instagram.com/_adarshhhh____?igsh=MXhuaWw4ZGQ5bTRvdA==" }
+    socialLinks: {
+      instagram: "https://www.instagram.com/_adarshhhh____?igsh=MXhuaWw4ZGQ5bTRvdA==",
+      x:"https://x.com/Bhagath_194_007",
+      threads:"https://www.threads.com/@_adarshhhh____",
+      Linkedin:"https://www.linkedin.com/in/d-bhagath-bhaskar-unnithan-6b8a713a5?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    }
   },
   {
     name: "Sneha S Lal",
@@ -72,7 +82,13 @@ const members = [
     initials: "SL",
     accent: "from-amber-400 to-amber-600",
     badge: "Creative",
-    socialLinks: { instagram: "https://www.instagram.com/_snehas_lal_?igsh=azFseXY5d3lzMWtl" }
+    socialLinks: {
+      instagram: "https://www.instagram.com/_snehas_lal_?igsh=azFseXY5d3lzMWtl",
+      x:"https://x.com/Bhagath_194_007",
+      threads:"https://www.threads.com/@_snehas_lal_",
+      Linkedin:"https://www.linkedin.com/in/d-bhagath-bhaskar-unnithan-6b8a713a5?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+      
+      
   } 
 ];
 
