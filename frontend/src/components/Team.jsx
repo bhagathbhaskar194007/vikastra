@@ -56,7 +56,6 @@ const members = [
     badge: "Operations",
   },
   {
-    {
     name: "Sneha S Lal",
     role: "Chief Creative Officer (CCO)",
     short: "CCO",
