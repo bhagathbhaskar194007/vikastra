@@ -100,11 +100,11 @@ const companyLinks = {
   email: "vikasthratechnologies@gmail.com"                  // Replace with our company email
 };
 //const socials = [
-  { Icon : InstagramIcon , label : "Instagram", url: companyLinks.instagram } ,
-  { Icon : XIcon , label : "X", url: companyLinks.x } ,
-  { Icon : ThreadsIcon , label : "Threads", url: companyLinks.threads } ,
-  { Icon : Linkedin , label : "LinkedIn", url: companyLinks.linkedin } ,
-  { Icon : Mail , label : "Email", url: companyLinks.email } ,
+ // { Icon : InstagramIcon , label : "Instagram", url: companyLinks.instagram } ,
+ // { Icon : XIcon , label : "X", url: companyLinks.x } ,
+//  { Icon : ThreadsIcon , label : "Threads", url: companyLinks.threads } ,
+ // { Icon : Linkedin , label : "LinkedIn", url: companyLinks.linkedin } ,
+ // { Icon : Mail , label : "Email", url: companyLinks.email } ,
 ] ;//
 
 export default function Team() {
