@@ -54,7 +54,7 @@ const members = [
       instagram: "https://www.instagram.com/_sa.lman__?igsh=ZXhkbmJsbWFmZ2l6",
       x:"https://x.net/SalmanFarizA",
       threads:"https://www.threads.com/@_sa.lman__",
-      linkedin:"https://www.linkedin.com/in/d-bhagath-bhaskar-unnithan-6b8a713a5?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+      linkedin:"https://www.linkedin.com/in/salman-fariz-a-203873409?utm_source=share_via&utm_content=profile&utm_medium=member_android"
     }
   },
   {
