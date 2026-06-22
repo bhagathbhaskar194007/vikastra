@@ -199,21 +199,22 @@ export default function Team() {
 
               {/* Social row */}
               {/* Social row */}
+{/* Social row */}
 <div className="flex items-center gap-2 pt-6 border-t border-white/5">
-  {socials.slice(0, 4).map(({ Icon, label }, k) => (
+  {socials.slice(0, 4).map(({ Icon, label, url }, k) => (
     <a
       key={k}
-      // This line dynamically pulls the link based on the icon's label (e.g., 'instagram')
-      href={m.socialLinks?.[label.toLowerCase()] || "#"}
+      // 1. Checks member's link -> 2. Falls back to company's explicit array link -> 3. Defaults to "#"
+      href={m.socialLinks?.[label.toLowerCase()] || url || "#"}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`${m.name} — ${label}`}
       data-testid={`team-${i}-social-${label.toLowerCase()}`}
       className="w-9 h-9 rounded-full grid place-items-center border border-white/10 text-slate-400 hover:text-sky-300 hover:border-sky-400/40 hover:bg-sky-400/5 transition"
     >
-                    <Icon className="w-3.5 h-3.5" />
-                  </a>
-                ))}
+      <Icon className="w-3.5 h-3.5" />
+    </a>
+  ))}
                 <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <ArrowUpRight className="w-4 h-4 text-sky-400" />
                 </div>
