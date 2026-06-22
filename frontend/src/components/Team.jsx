@@ -55,6 +55,17 @@ const members = [
     accent: "from-violet-400 to-violet-600",
     badge: "Operations",
   },
+  {
+    {
+    name: "Sneha S Lal",
+    role: "Chief Creative Officer (CCO)",
+    short: "CCO",
+    focus: "Creative direction, brand identity, user experience, and design strategy.",
+    bio: "Sneha S Lal serves as the Chief Creative Officer (CCO) at Vikastra Technologies. She guides the company's creative vision, shaping brand identity and ensuring user-centric design across all products to deliver engaging visual experiences.",
+    initials: "SL",
+    accent: "from-amber-400 to-amber-600",
+    badge: "Creative",
+  } 
 ];
 
 const socials = [
