@@ -166,15 +166,19 @@ export default function Team() {
               <p className="text-sm text-slate-400 leading-relaxed mb-8 flex-1">{m.bio}</p>
 
               {/* Social row */}
-              <div className="flex items-center gap-2 pt-6 border-t border-white/5">
-                {socials.slice(0, 4).map(({ Icon, label }, k) => (
-                  <a
-                    key={k}
-                    href="#"
-                    aria-label={`${m.name} — ${label}`}
-                    data-testid={`team-${i}-social-${label.toLowerCase()}`}
-                    className="w-9 h-9 rounded-full grid place-items-center border border-white/10 text-slate-400 hover:text-sky-300 hover:border-sky-400/40 hover:bg-sky-400/5 transition"
-                  >
+              {/* Social row */}
+<div className="flex items-center gap-2 pt-6 border-t border-white/5">
+  {socials.slice(0, 4).map(({ Icon, label }, k) => (
+    <a
+      key={k}
+      // This line dynamically pulls the link based on the icon's label (e.g., 'instagram')
+      href={m.socialLinks?.[label.toLowerCase()] || "#"}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`${m.name} — ${label}`}
+      data-testid={`team-${i}-social-${label.toLowerCase()}`}
+      className="w-9 h-9 rounded-full grid place-items-center border border-white/10 text-slate-400 hover:text-sky-300 hover:border-sky-400/40 hover:bg-sky-400/5 transition"
+    >
                     <Icon className="w-3.5 h-3.5" />
                   </a>
                 ))}
