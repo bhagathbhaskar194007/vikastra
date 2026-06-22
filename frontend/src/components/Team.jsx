@@ -210,7 +210,7 @@ export default function Team() {
                 / About the Founding Team
               </span>
               <h3 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.1] mt-4 mb-6">
-                Three founders. <span className="gradient-text">One vision.</span>
+                Four founders. <span className="gradient-text">One vision.</span>
               </h3>
               <p className="text-slate-400 leading-relaxed mb-4">
                 Vikastra Technologies was founded by{" "}
