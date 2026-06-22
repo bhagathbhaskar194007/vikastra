@@ -45,6 +45,7 @@ const members = [
     initials: "SF",
     accent: "from-rose-400 to-rose-600",
     badge: "Technology",
+    socialLinks: { instagram: "https://www.instagram.com/_sa.lman__?igsh=ZXhkbmJsbWFmZ2l6" }
   },
   {
     name: "Adarsh S",
@@ -55,6 +56,7 @@ const members = [
     initials: "AS",
     accent: "from-violet-400 to-violet-600",
     badge: "Operations",
+    socialLinks: { instagram: "https://www.instagram.com/_adarshhhh____?igsh=MXhuaWw4ZGQ5bTRvdA==" }
   },
   {
     name: "Sneha S Lal",
@@ -65,6 +67,7 @@ const members = [
     initials: "SL",
     accent: "from-amber-400 to-amber-600",
     badge: "Creative",
+    socialLinks: { instagram: "https://www.instagram.com/_snehas_lal_?igsh=azFseXY5d3lzMWtl" }
   } 
 ];
 
