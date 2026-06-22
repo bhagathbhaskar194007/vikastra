@@ -95,7 +95,7 @@ const members = [
 const companyLinks = {
   instagram: "https://www.instagram.com/vikastratechnologies?igsh=MTJoMDE3Zmk3YzAwZg==", // Replaceing with our company link
   x: "https://x.com/VikastraTech",                     // Replace with our company link
-  threads: "https://www.threads.com/@vikastratechnologies",    // Replace with our company link
+  threads: "https://www.threads.net/@vikastratechnologies",    // Replace with our company link
   linkedin: "https://www.linkedin.com/company/vikastra", // Replace with our company link
   email: "vikasthratechnologies@gmail.com"                  // Replace with our company email
 };
