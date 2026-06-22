@@ -91,13 +91,22 @@ const members = [
   } 
 ];
 
+// Company's official social media profiles
+const companyLinks = {
+  instagram: "https://www.instagram.com/vikastratechnologies?igsh=MTJoMDE3Zmk3YzAwZg==", // Replaceing with our company link
+  x: "https://x.com/VikastraTech",                     // Replace with our company link
+  threads: "https://www.threads.com/@vikastratechnologies",    // Replace with our company link
+  linkedin: "https://www.linkedin.com/company/vikastra", // Replace with our company link
+  email: "vikasthratechnologies@gmail.com"                  // Replace with our company email
+};
+
 const socials = [
-  { Icon: InstagramIcon, label: "Instagram" },
-  { Icon: XIcon, label: "X" },
-  { Icon: ThreadsIcon, label: "Threads" },
-  { Icon: Linkedin, label: "LinkedIn" },
-  { Icon: Mail, label: "Email" },
-];
+  { Icon : InstagramIcon , label : "Instagram", url: companyLinks.instagram } ,
+  { Icon : XIcon , label : "X", url: companyLinks.x } ,
+  { Icon : ThreadsIcon , label : "Threads", url: companyLinks.threads } ,
+  { Icon : Linkedin , label : "LinkedIn", url: companyLinks.linkedin } ,
+  { Icon : Mail , label : "Email", url: companyLinks.email } ,
+] ;
 
 export default function Team() {
   return (
