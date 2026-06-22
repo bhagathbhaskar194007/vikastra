@@ -105,7 +105,7 @@ const companyLinks = {
 //  { Icon : ThreadsIcon , label : "Threads", url: companyLinks.threads } ,
  // { Icon : Linkedin , label : "LinkedIn", url: companyLinks.linkedin } ,
  // { Icon : Mail , label : "Email", url: companyLinks.email } ,
-] ;//
+//] ;
 
 export default function Team() {
   return (
