@@ -82,15 +82,17 @@ export default function Footer() {
             </p>
 
             <div className="flex items-center gap-3">
-              {[
-                { Icon: InstagramIcon, label: "Instagram" },
-                { Icon: XIcon, label: "X" },
-                { Icon: ThreadsIcon, label: "Threads" },
-                { Icon: Linkedin, label: "LinkedIn" },
-              ].map(({ Icon, label }) => (
-                <a
-                  key={label}
-                  href="#"
+             {[
+  { Icon: InstagramIcon, label: "Instagram", url: "https://instagram.com/YOUR_USERNAME" },
+  { Icon: XIcon, label: "X", url: "https://x.com/YOUR_USERNAME" },
+  { Icon: ThreadsIcon, label: "Threads", url: "https://threads.net/@YOUR_USERNAME" },
+  { Icon: Linkedin, label: "LinkedIn", url: "https://linkedin.com/company/YOUR_COMPANY" },
+].map(({ Icon, label, url }) => (
+  <a
+    key={label}
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
                   aria-label={label}
                   data-testid={`social-${label.toLowerCase()}`}
                   className="w-10 h-10 rounded-full grid place-items-center border border-white/10 text-slate-400 hover:text-sky-300 hover:border-sky-400/40 hover:bg-sky-400/5 transition"
