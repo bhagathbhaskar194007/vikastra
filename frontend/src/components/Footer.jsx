@@ -90,7 +90,7 @@ export default function Footer() {
   { Icon: InstagramIcon, label: "Instagram", url: "https://www.instagram.com/vikastratechnologies/" },
   { Icon: XIcon, label: "X", url: "https://x.com/VikastraTech" },
   { Icon: ThreadsIcon, label: "Threads", url: "https://www.threads.com/@vikastra_technologies" },
-  { Icon: Linkedin, label: "LinkedIn", url: "https://linkedin.com/company/YOUR_COMPANY" },
+  { Icon: Linkedin, label: "LinkedIn", url: "https://www.linkedin.com/company/vikastra-technologies/" },
 ].map(({ Icon, label, url }) => (
   <a
     key={label}
